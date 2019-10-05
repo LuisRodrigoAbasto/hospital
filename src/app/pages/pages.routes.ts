@@ -5,9 +5,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 
 
 
-const pagesRoutes: Routes = [
-    { 
-        path: '', 
+const pagesRoutes: Routes = [{
+        path: '',
         component: PagesComponent,
         children: [
             { path: 'dashboard', component: DashboardComponent },
@@ -18,4 +17,5 @@ const pagesRoutes: Routes = [
 
 ];
 
+// tslint:disable-next-line: semicolon
 export const PAGES_ROUTES = RouterModule.forChild(pagesRoutes)
