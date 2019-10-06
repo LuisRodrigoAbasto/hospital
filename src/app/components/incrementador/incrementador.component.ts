@@ -27,7 +27,7 @@ export class IncrementadorComponent implements OnInit {
     // let elemHTML: any = document.getElementsByName('progreso')[0];
     // console.log(this.txtProgress);
     // console.log(elemHTML.value);
-    if (newValue >= 100) {
+    if ((newValue) >= 100) {
       this.progreso = 100;
     } else if (newValue <= 0) {
       this.progreso = 0;
@@ -39,7 +39,7 @@ export class IncrementadorComponent implements OnInit {
     this.cambioValor.emit(this.progreso);
   }
   cambiarValor(valor: number) {
-    if (this.progreso >= 100 && valor > 0) {
+    if ((this.progreso + valor) >= 100 && valor > 0) {
       this.progreso = 100;
       return;
     }
