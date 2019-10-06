@@ -1,18 +1,20 @@
-    <!-- <div> -->
-    <app-header></app-header>
-    <div class="app-body">
-      <app-sidebar></app-sidebar>
-      <app-breadcrumbs></app-breadcrumbs>
-      <router-outlet></router-outlet>
-    </div>
-    <!-- </div> -->
-    <footer class="app-footer">
-        <div>
-          <a href="#">ABASTO</a>
-          <span>&copy; 2019 creativeLabs.</span>
-        </div>
-        <div class="ml-auto">
-          <span>Powered by</span>
-          <a href="#">Luis Rodrigo</a>
-        </div>
-      </footer>
+<!-- <div> -->
+<app-header-component></app-header-component>
+<div class="app-body">
+  <app-sidebar-component></app-sidebar-component>
+  <main class="main">
+  <app-breadcrumbs-component></app-breadcrumbs-component>
+  <router-outlet></router-outlet>
+  </main>
+</div>
+<!-- </div> -->
+<footer class="app-footer">
+  <div>
+    <a href="https://coreui.io">CoreUI</a>
+    <span>&copy; 2018 creativeLabs.</span>
+  </div>
+  <div class="ml-auto">
+    <span>Powered by</span>
+    <a href="https://coreui.io">CoreUI</a>
+  </div>
+</footer>

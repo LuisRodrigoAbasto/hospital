@@ -19,10 +19,23 @@
   <link rel="stylesheet" href="assets/public/css/style.css">
   <link rel="stylesheet" href="assets/public/css/pace.min.css">
   <!-- <link href="assets/public/css/plantilla.css" rel="stylesheet"> -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    // Shared ID
+    gtag('config', 'UA-118965717-3');
+    // Bootstrap ID
+    gtag('config', 'UA-118965717-5');
+  </script>
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
 
-  <app-root></app-root>
+  <app-root-component></app-root-component>
   <!-- <sidebar-root></sidebar-root> -->
 
   <script src="assets/public/js/pace.min.js"></script>
@@ -33,6 +46,14 @@
   <script src="assets/public/js/coreui.min.js"></script>
   <script src="assets/public/js/custom-tooltips.min.js"></script>
   <script src="assets/public/js/sweetalert2.all.min.js"></script>
-  <!-- <script src="assets/public/js/plantilla.js"></script> -->
+  
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/pace-progress/pace.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script> -->
 </body>
 </html>
