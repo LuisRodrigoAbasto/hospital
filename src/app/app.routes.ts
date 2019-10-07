@@ -1,8 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 
 // import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { LoginComponent } from './login/login.component';
+
 // import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
@@ -14,11 +15,11 @@ const appRoutes: Routes = [
     //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     //     ]
     // },
-
+    { path: '**', component: NopagefoundComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: LoginComponent },
 
-    { path: '**', component: NopagefoundComponent }
+
 ];
 
 
