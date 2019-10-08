@@ -15,12 +15,10 @@ const appRoutes: Routes = [
     //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     //     ]
     // },
-    { path: '**', component: NopagefoundComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: LoginComponent },
-
-
+    { path: '**', component: NopagefoundComponent },
 ];
 
 
-export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: true } );
+export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: false} );

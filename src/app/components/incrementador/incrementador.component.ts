@@ -2,7 +2,7 @@ import { Component, Input, Output, ViewChild, OnInit, EventEmitter, ElementRef }
 // import { EventEmitter } from 'events';
 
 @Component({
-  selector: 'app-incrementador-component',
+  selector: 'app-incrementador',
   templateUrl: './incrementador.component.html',
   styles: []
 })

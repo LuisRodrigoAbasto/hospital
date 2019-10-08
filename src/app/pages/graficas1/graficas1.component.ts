@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-graficas1-component',
+  selector: 'app-graficas1',
   templateUrl: './graficas1.component.html',
   styles: []
 })
