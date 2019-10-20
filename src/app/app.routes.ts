@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './login/register.component';
 
 // import { PagesComponent } from './pages/pages.component';
 
@@ -16,7 +17,7 @@ const appRoutes: Routes = [
   //     ]
   // },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: LoginComponent },
+  { path: 'register', component: RegisterComponent},
   { path: '**', component: NopagefoundComponent },
 ];
 
