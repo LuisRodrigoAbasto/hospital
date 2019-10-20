@@ -7,20 +7,18 @@ import { LoginComponent } from './login/login.component';
 // import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
-    // { 
-    //     path: '', 
-    //     component: PagesComponent,
-    //     children: [
-    //         { path: 'dashboard', component: DashboardComponent },
-    //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    //     ]
-    // },
-    { path: '**', component: NopagefoundComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: LoginComponent },
-
-
+  // {
+  //     path: '',
+  //     component: PagesComponent,
+  //     children: [
+  //         { path: 'dashboard', component: DashboardComponent },
+  //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  //     ]
+  // },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: LoginComponent },
+  { path: '**', component: NopagefoundComponent },
 ];
 
 
-export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: true } );
+export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: false });

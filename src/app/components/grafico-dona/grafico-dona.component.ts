@@ -3,7 +3,7 @@ import { ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-grafico-dona-component',
+  selector: 'app-grafico-dona',
   templateUrl: './grafico-dona.component.html',
   styles: []
 })
